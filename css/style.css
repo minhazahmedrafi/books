@@ -1,0 +1,303 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@400;500;700;800&family=Sniglet:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+:root{
+    --Snigle:"Snigle",cursive;
+    --Rubik:"Rubik",cursive;
+    --Patua:"Patua One"cursive;
+    --Lobster:"Lobster",cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(
+        to bottom,
+        #dd2476,#ff5120);
+    --light-gray:rgba(255,255,255,0.887);
+
+}
+header a {
+    font-family: var(--Snigle);
+    font-size: 14px;
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+header{
+    background: #dd2476;
+    background: var(--bggradient);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background: #ddd;
+    text-decoration: none;
+    color: black;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+header .nav-item:last-child{
+    padding-right: 8rem;
+}
+header .nav-item{
+    padding-left: 1rem;
+}
+header .navbar-brand{
+    padding-left: 8rem;
+}
+header .nav-link:hover{
+    color: #000;
+}
+header .row .col-md-5{
+    padding: 1rem 0.5rem;
+}
+header .row .col-md-7{
+    padding: 8rem 0.5rem;
+    padding-bottom: 11rem;
+    font-family: var(--Rubik);
+    color: #ffffff;
+}
+header .row .col-md-5 img{
+    width: 90%;
+}
+header .container .col-md-7 h6{
+    padding: .5rem;
+    letter-spacing: 0.20rem;
+}
+header .container .col-md-7 h1{
+    font-size: 3rem;
+}
+header .container .col-md-7 p{
+    padding: 0.5rem 2rem;
+}
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* Section-1 */
+#section-1{
+    padding: 8rem 0rem;
+}
+#section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2rem;
+}
+#section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+#section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 5rem;
+    left: -8rem;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 4rem 2rem 8rem 3rem;
+    box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+#section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4rem 0rem;
+    font-size: 2rem;
+}
+#section-1 .row .col-md-6 .panel p{
+    font-size: 0.9rem;
+}
+/* Section-2 */
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: url('../assets/pexels-photo-452738.jpeg');
+    background-position: -24rem -17rem;
+    background-size: 150%;
+    position: relative;
+}
+.cover .content{
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+.cover .content h1{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+.cover .content p{
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 14rem;
+    height: 10rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.numbers{
+    margin-top: -16vmin;
+}
+.numbers .rect h1{
+    font-size: 4.5rem;
+    color: tomato;
+}
+.numbers .rect p{
+    font-family: var(--Patua);
+    font-weight: 700;
+}
+.purchase h1{
+    padding-top: 15vmin;
+    padding-bottom: 0.1rem;
+    font-family: var(--Lobster);
+}
+.purchase p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 6vmin;
+}
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+.cards .title{
+    background: rgba(208,241,241,0.199);
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+}
+.card .card-text{
+    padding: 3.5rem 3rem;
+    color: var(--light-black);
+}
+.card-body .pricing{
+    background: rgba(208,241,241,0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+.card-body .pricing h1{
+    font-size: 10vmin;
+    padding: 1.5rem 0.5rem;
+}
+
+/* section-3 */
+#section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+#section-3 .col-md-12 h1{
+    padding: 3rem 0 0.5rem 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+#section-3 .col-md-12 p{
+    padding: 0rem 4rem;
+    padding-bottom: 2rem;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+#section-3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+}
+#section-3 .desktop h3{
+    font-size: 4vmin;
+}
+#section-3 .desktop p{
+    font-size: 2.5vmin;
+}
+
+/* section-4 */
+#section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+#section-4 .team{
+    padding: 10vmin 4vmin;
+}
+#section-4 .card{
+    width: 20rem;
+    margin-top: 10vmin;
+}
+#section-4 .card .card-text{
+    padding: 0.5rem;
+}
+#section-4 .card .card-body a{
+    font-size: 1.5rem;
+}
+.border-radius{
+    border-radius: 340px;
+    width: 60%;
+}
+.team .card{
+    box-shadow: 0px 8px 20px 4px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer{
+    background: rgba(0,0,0,0.815);
+    overflow-x: hidden;
+    padding: 10vmin 18vmin;
+}
+footer p a{
+    color: #ff512f;
+}
+footer input{
+    border: none !important;
+}
+footer input::placeholder{
+    color: white !important;
+}
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+    cursor: pointer;
+}
+footer .column i {
+    color: #dd2476;
+    cursor: pointer;
+}
+footer .column i+i{
+    padding: 0 0.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1s ease;
+  }
